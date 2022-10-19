@@ -1,6 +1,6 @@
 import React from "react";
 import { HighLightCard } from "../../components/HighLightCard";
-import { Container, Header, Photo, User, UserGreeeting, UserInfo, UserName, UserWrapper, Icon } from "./styles";
+import { Container, Header, Photo, User, UserGreeeting, UserInfo, UserName, UserWrapper, Icon, HighLightCards } from "./styles";
 
 export function Dashboard() {
     return (
@@ -17,8 +17,10 @@ export function Dashboard() {
                     <Icon />
                 </UserWrapper>
             </Header>
+            <HighLightCards >
+                <HighLightCard />
 
-            <HighLightCard />
+            </HighLightCards>
         </Container>
     )
 }
