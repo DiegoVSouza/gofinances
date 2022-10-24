@@ -1,6 +1,6 @@
 import React from "react";
 import { HighLightCard } from "../../components/HighLightCard";
-import { Container, Header, Photo, User, UserGreeeting, UserInfo, UserName, UserWrapper, Icon, HighLightCards } from "./styles";
+import { Container, Header, Photo, User, UserGreeeting, UserInfo, UserName, UserWrapper, Icon, HighLightCards, Transactions } from "./styles";
 
 export function Dashboard() {
     return (
@@ -18,9 +18,12 @@ export function Dashboard() {
                 </UserWrapper>
             </Header>
             <HighLightCards >
-                <HighLightCard />
+                <HighLightCard title="Entradas" amount="R$ 123.000" lastTransaction="Data tal" type="up"/>
 
             </HighLightCards>
+            <Transactions>
+
+            </Transactions>
         </Container>
     )
 }
